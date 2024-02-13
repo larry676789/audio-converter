@@ -1,3 +1,5 @@
-module.exports = function () {
-  return 'audio-converter';
-};
+import { AudioConverter } from "./src/classes/AudioConverter";
+
+export {
+  AudioConverter
+}

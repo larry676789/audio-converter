@@ -21,7 +21,10 @@
   "keywords": [
     "audio-converter"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "0.12.10",
+    "@ffmpeg/util": "0.12.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
@@ -35,6 +38,8 @@
     "prettier": "^2.2.1",
     "standard-version": "^9.0.0"
   },
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "license": "MIT"
 }
