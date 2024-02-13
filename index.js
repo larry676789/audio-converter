@@ -1,3 +1,5 @@
-module.exports = function () {
-  return 'npm-package-template';
-};
+import { AudioConverter } from "./src/classes/AudioConverter";
+
+export {
+  AudioConverter
+}
