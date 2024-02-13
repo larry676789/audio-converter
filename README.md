@@ -1,10 +1,10 @@
-# npm-package-template
+# audio-converter
 
-[![NPM](https://nodei.co/npm/npm-package-template.png)](https://nodei.co/npm/npm-package-template/)
+[![NPM](https://nodei.co/npm/audio-converter.png)](https://nodei.co/npm/audio-converter/)
 
-[![NPM version](https://img.shields.io/npm/v/npm-package-template.svg)](https://www.npmjs.com/package/npm-package-template)
-[![Build Status](https://travis-ci.org/mastashake08/npm-package-template.svg?branch=master)](https://travis-ci.org/mastashake08/npm-package-template)
-[![Coverage Status](https://coveralls.io/repos/github/mastashake08/npm-package-template/badge.svg?branch=master)](https://coveralls.io/github/mastashake08/npm-package-template?branch=master)
+[![NPM version](https://img.shields.io/npm/v/audio-converter.svg)](https://www.npmjs.com/package/audio-converter)
+[![Build Status](https://travis-ci.org/mastashake08/audio-converter.svg?branch=master)](https://travis-ci.org/mastashake08/audio-converter)
+[![Coverage Status](https://coveralls.io/repos/github/mastashake08/audio-converter/badge.svg?branch=master)](https://coveralls.io/github/mastashake08/audio-converter?branch=master)
 
 npm package template.
 
@@ -13,8 +13,8 @@ npm package template.
 Clone repository with Git:
 
 ```sh
-git clone https://github.com/mastashake08/npm-package-template.git
-cd npm-package-template
+git clone https://github.com/mastashake08/audio-converter.git
+cd audio-converter
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ Rename package (use [npm-package-name-checker](https://mastashake08.org/npm-pack
 
 ```sh
 # replace $NAME with your package name
-git grep -l npm-package-template | xargs sed -i '' -e "s/npm-package-template/$NAME/g"
+git grep -l audio-converter | xargs sed -i '' -e "s/audio-converter/$NAME/g"
 ```
 
 Manually update the files:
@@ -115,4 +115,4 @@ npm pack --dry-run
 
 ## License
 
-[MIT](https://github.com/mastashake08/npm-package-template/blob/master/LICENSE)
+[MIT](https://github.com/mastashake08/audio-converter/blob/master/LICENSE)
