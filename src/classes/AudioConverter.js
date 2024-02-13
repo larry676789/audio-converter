@@ -1,15 +1,17 @@
 import { FFmpeg } from '@ffmpeg/ffmpeg'
 class AudioConverter {
     #ffmpeg;
+    #file;
 
-    constructor() {
+    constructor(file) {
+        this.#file = file;
         this.#ffmpeg = new FFmpeg();
     }
 
-    async convert({arrayBuffer, outputName = "test.mp3", inputName}) {
+    async convert(outputName = "test.mp3") {
         await this.#ffmpeg.load();
-        await this.#ffmpeg.writeFile(inputName, new Uint8Array(arrayBuffer));
-        await this.#ffmpeg.exec(["-i", inputName, outputName]);
+        await this.#ffmpeg.writeFile(this.#file.name, new Uint8Array(await this.#file.arrayBuffer()));
+        await this.#ffmpeg.exec(["-i", this.#file.name, outputName]);
         const data = await this.#ffmpeg.readFile(outputName);
         const buffer = new Uint8Array(data).buffer;
         const blob = new Blob([buffer]);
